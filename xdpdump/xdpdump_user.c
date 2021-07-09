@@ -20,7 +20,6 @@
 
 #include <unistd.h>
 
-
 #include "xdpdump_common.h"
 
 extern char *optarg;
@@ -233,12 +232,15 @@ static void usage(const char *prog)
 int main(int argc, char **argv)
 {
 	static struct perf_event_mmap_page *mem_buf[MAX_CPU];
+
 	struct bpf_prog_load_attr prog_load_attr = {
 		.prog_type = BPF_PROG_TYPE_XDP,
 		.file = "xdpdump_kern.o",
 	};
+
 	struct bpf_map *perf_map;
 	struct bpf_object *obj;
+
 	int sys_fds[MAX_CPU];
 	int perf_map_fd;
 	int prog_fd;

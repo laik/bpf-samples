@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "*.c": "c",
+        "bpf_helpers.h": "c",
+        "if_link.h": "c",
+        "if_ether.h": "c",
+        "type_traits": "c",
+        "sysinfo.h": "c",
+        "unistd.h": "c",
+        "if_vlan.h": "c"
+    }
+}
