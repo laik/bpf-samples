@@ -7,6 +7,12 @@
         "type_traits": "c",
         "sysinfo.h": "c",
         "unistd.h": "c",
-        "if_vlan.h": "c"
+        "if_vlan.h": "c",
+        "ipv6.h": "c",
+        "stddef.h": "c",
+        "stdbool.h": "c",
+        "rss_common.h": "c",
+        "udp.h": "c",
+        "string.h": "c"
     }
 }
